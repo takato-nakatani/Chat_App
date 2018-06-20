@@ -5,8 +5,8 @@
     session_start();
     require_once 'UserManager.php';
     require_once 'PostManager.php';
+    require_once 'FriendsManager.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
-
     $smarty = new Smarty();
     $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
     $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
@@ -16,7 +16,7 @@
     $LoginUserData = array();
     $LoginUserData = Select_LogedIn_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
     $user_id = $LoginUserData['id'];
-    $user_name = $LoginUserData['name'];
+    $user_name = $LoginUserData['account_id'];
 
     $smarty -> assign("name" ,$user_name);
 
@@ -30,9 +30,11 @@
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Keiziban3.php');
     }
 
-    $fetchAll = Select_Inner_Join($LoginUserId);  // 内部結合した結果セットを取得する関数。
+//    $fetchAll = Select_Inner_Join($LoginUserId);  // 内部結合した結果セットを取得する関数。
+    $fetchAll = Select_contribution();
     $cnt = 1;  //ボタンの個別番号
     $smarty -> assign('cnt', $cnt);
+    $smarty -> assign('login_user_id', $LoginUserId);
     $smarty -> assign('fetchAll', $fetchAll);
 
 
@@ -51,6 +53,25 @@
             header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/MyContribution.php');
         }
     }
+
+    if(isset($_POST['contributionbutton'])){
+        if(isset($_POST['contribution'])){
+            if(!(empty($_POST['contribution']))){
+                $PostContribution = $_POST['contribution'];
+                if(mb_strlen($PostContribution) > 100){
+                    print('100字以内で入力してください。');
+                }else{
+                    insert_contribution($PostContribution, $user_id);
+                    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/MyContribution.php');
+                }
+            }else{
+                echo("投稿文を入力してください。");
+                echo nl2br("\n\n\n");
+            }
+        }
+    }
+
+
 
 
     $smarty -> display("MyPage.tpl");

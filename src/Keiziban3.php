@@ -17,31 +17,10 @@
     $LoginUserData = array();
     $LoginUserData = Select_LogedIn_User_Data($LoginUserId);
     $user_id = $LoginUserData['id'];
-    $user_name = $LoginUserData['name'];
+    $user_name = $LoginUserData['account_id'];
 
     $smarty -> assign("name" ,$user_name);
     $smarty -> display("Keiziban3.tpl");
-
-
-
-    if(isset($_POST['contributionbutton'])){
-        if(isset($_POST['contribution'])){
-            if(!(empty($_POST['contribution']))){
-
-                $PostContribution = $_POST['contribution'];
-                if(mb_strlen($PostContribution) > 100){
-                    print('100字以内で入力してください。');
-                }else{
-                    insert_contribution($PostContribution, $user_id);
-                }
-
-
-            }else{
-                echo("投稿文を入力してください。");
-                echo nl2br("\n\n\n");
-            }
-        }
-    }
 
     if(isset($_POST['Logoutbutton'])){
         session_destroy();

@@ -50,6 +50,9 @@
                     if ($decision) {
                         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Keiziban3.php');
                     } else {
+                        var_dump($_POST['Loginname']);
+                        var_dump($_POST['Loginpass']);
+
                         echo('ユーザ名またはパスワードが間違っています。');
                     }
                 }

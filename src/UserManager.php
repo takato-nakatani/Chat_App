@@ -4,15 +4,16 @@
 
     require_once 'DbManager3.php';
 
-    function Insert_User($user_name, $user_pass){      //ユーザの登録
+    function Insert_User($user_name, $user_id, $user_pass){      //ユーザの登録
         try{
 
             $connect = GetDb();
-            $statement = 'INSERT INTO account_info(name, password) VALUES(?, ?)';
+            $statement = 'INSERT INTO account_info(account_id, password, name) VALUES(?, ?, ?)';
             $connect -> beginTransaction();
             $ins = $connect -> prepare($statement);
-            $ins -> bindValue('1', $user_name);
+            $ins -> bindValue('1', $user_id);
             $ins -> bindValue('2', $user_pass);
+            $ins -> bindValue('3', $user_name);
             $ins -> execute();
             $connect -> commit();
         }catch(PDOException $e){
@@ -22,12 +23,12 @@
     }
 
 
-    function Duplication_Check($name, $pass){          //ユーザ情報の重複がないかどうか確認
+    function Duplication_Check($id, $pass){          //ユーザ情報の重複がないかどうか確認
         try{
             $db = GetDb();
-            $statement = 'SELECT * FROM account_info WHERE name = ? AND password = ?';
+            $statement = 'SELECT * FROM account_info WHERE account_id = ? AND password = ?';
             $sel = $db -> prepare($statement);
-            $sel -> bindValue(1 , $name);
+            $sel -> bindValue(1 , $id);
             $sel -> bindValue(2 , $pass);
     //        $statement = "SELECT * FROM account_info WHERE name = '$name' AND password = '$pass'";
     //        $sel = $db -> prepare($statement);
@@ -37,7 +38,7 @@
             if(!(empty($ResultSet))){
                 foreach($ResultSet as $data){
 
-                    if($data['name'] === $name && $data['password'] === $pass){
+                    if($data['account_id'] === $id && $data['password'] === $pass){
                         echo('このユーザ名は使用できません。');
                         return false;
                     }else{
@@ -55,24 +56,21 @@
         }
     }
 
-    function Login_Certification($name, $pass){        //ログイン認証
+    function Login_Certification($id, $pass){        //ログイン認証
         try{
-
-
             $db = GetDb();
-            $statement = 'SELECT * FROM account_info WHERE name = ? AND password = ?';
+            $statement = 'SELECT * FROM account_info WHERE account_id = ? AND password = ?';
             $sel = $db -> prepare($statement);
-            $sel -> bindValue(1 , $name);
+            $sel -> bindValue(1 , $id);
             $sel -> bindValue(2 , $pass);
-    //        $statement = "SELECT * FROM account_info WHERE name = '$name' AND password = '$pass'";
-    //        $sel = $db -> prepare($statement);
             $sel -> execute();
 
             $ResultSet = $sel -> fetchAll(PDO::FETCH_ASSOC);
             if(!(empty($ResultSet))){
                 foreach($ResultSet as $data){
 
-                    if($data['name'] === $name && $data['password'] === $pass){
+                    if($data['account_id'] === $id && $data['password'] === $pass){
+
                         $_SESSION['id'] = $data['id'];
                         return true;
                     }else{

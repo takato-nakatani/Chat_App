@@ -65,7 +65,7 @@
             $fetchAll = $sel -> fetchAll(PDO::FETCH_ASSOC);
             if(!(empty($fetchAll))){
                 foreach($fetchAll as $data){
-                    $name = e($data['name']);
+                    $name = e($data['account_id']);
                     $contents = $data['contents'];
                     $time = $data['time'];
                     print("{$name}　さんの投稿　");
@@ -84,7 +84,7 @@
     function Select_Inner_Join($user_id){  //テーブルを外部キー制約のもと内部結合させて取得
         try{
             $db = GetDb();
-            $statement = 'SELECT timeline_info.id, contents, user_id, time, name FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id WHERE user_id = ?';
+            $statement = 'SELECT timeline_info.id, contents, user_id, time, account_id FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id WHERE user_id = ?';
             $sel = $db -> prepare($statement);
             $sel -> bindValue('1', $user_id);
             $sel -> execute();
@@ -93,8 +93,21 @@
         }catch(PDOException $e){
             die("エラーメッセージ：{$e -> getMessage()}");
         }
-
     }
+
+function Select_contribution(){  //投稿文を取得
+    try{
+        $db = GetDb();
+        $statement = 'SELECT timeline_info.id, contents, user_id, time, account_id FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id';
+        $sel = $db -> prepare($statement);
+        $sel -> execute();
+        $fetchAll = $sel -> fetchAll(PDO::FETCH_ASSOC);
+        return $fetchAll;
+    }catch(PDOException $e){
+        die("エラーメッセージ：{$e -> getMessage()}");
+    }
+
+}
 
 
     function editbutton($contents_id){  //マイページで編集ボタンが押された際に実行される
