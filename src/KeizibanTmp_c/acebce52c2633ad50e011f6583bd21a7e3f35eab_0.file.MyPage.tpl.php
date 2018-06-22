@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-21 03:28:32
+/* Smarty version 3.1.31, created on 2018-06-21 11:19:50
   from "/src/KeizibanTmp/MyPage.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2a9cd0600508_38617162',
+  'unifunc' => 'content_5b2b0b464531e2_01605108',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'acebce52c2633ad50e011f6583bd21a7e3f35eab' => 
     array (
       0 => '/src/KeizibanTmp/MyPage.tpl',
-      1 => 1529517451,
+      1 => 1529520322,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2a9cd0600508_38617162 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2b0b464531e2_01605108 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -55,7 +55,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['data']->value) {
                             <?php echo $_smarty_tpl->tpl_vars['data']->value['account_id'];?>
 さんの投稿
                         <?php }?>
-
                         <input type = "hidden" name = "contents_id<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
 " value = <?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
 >

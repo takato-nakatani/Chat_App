@@ -9,7 +9,7 @@
 </head>
 <body>
 <p>友達の申請が完了しました。</p>
-<form method = "POST" action = "EditCompletion.php">
+<form method = "POST" action = "MyContribution.php">
     <input type = "submit" name = "back_mypage" value = "マイページに戻る">
 </form>
 <form method = "POST" action = "Request_Management.php">

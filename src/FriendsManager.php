@@ -20,63 +20,131 @@
         }
     }
 
-    function insert_friends_request($request_user_id, $requested_user_id){   //誰かが友達申請した場合に使用
+    function Update_flg($flg_name, $value, $user_request, $user_requested){
+        try{
+            $db = GetDb();
+            $statement = 'UPDATE request_info SET ? = ? WHERE user_request = ? AND user_requested = ?';
+            $db -> beginTransaction();
+            $upd = $db -> prepare($statement);
+            $upd -> bindvalue('1', $flg_name, PDO::PARAM_STR);
+            $upd -> bindvalue('2', $value, PDO::PARAM_INT);
+            $upd -> bindvalue('3', $user_request,PDO::PARAM_INT);
+            $upd -> bindvalue('4', $user_requested,PDO::PARAM_INT);
+            $upd -> execute();
+            $db -> commit();
+        }catch(PDOException $e){
+            $db -> rollback();
+            die("UPDATEエラー：{$e -> getMessage()}");
+        }
+    }
+
+    //申請を取り消した際にそのレコードを削除
+    function Delete_request($request_user_id, $requested_user_id){
+        try{
+            $db = GetDb();
+            $statement = 'DELETE FROM request_info WHERE user_request = ? AND user_requested = ?;';
+            $upd = $db -> prepare($statement);
+            $upd -> bindvalue('1', $request_user_id, PDO::PARAM_INT);
+            $upd -> bindvalue('2', $requested_user_id,PDO::PARAM_INT);
+            $upd -> execute();
+        }catch(PDOException $e){
+            die("DELETEエラー：{$e -> getMessage()}");
+        }
+    }
+
+    function Delete_depulication(){  //重複データを削除
+        try{
+            $db = GetDb();
+            $statement = 'DELETE FROM request_info WHERE id Not In( SELECT * FROM ( SELECT Min(id) FROM request_info GROUP BY user_request, user_requested ) b );';
+            $upd = $db -> prepare($statement);
+            $upd -> execute();
+        }catch(PDOException $e){
+            die("DELETEエラー：{$e -> getMessage()}");
+        }
+    }
+
+    function insert_friends_request($request_user_id, $requested_user_id, $request_flg){   //誰かが友達申請した場合に使用
             try{
                 $db = GetDb();
-                $statement = 'INSERT INTO friends_info(user_request, user_requested) VALUES(?, ?)';
+                $statement = 'INSERT INTO request_info(user_request, user_requested, friends_request_flg) VALUES(?, ?, ?)';
                 $db -> beginTransaction();
                 $ins = $db -> prepare($statement);
-                $ins -> bindValue('1', $request_user_id);
-                $ins -> bindvalue('2', $requested_user_id);
+                $ins -> bindValue('1', $request_user_id, PDO::PARAM_INT);
+                $ins -> bindvalue('2', $requested_user_id, PDO::PARAM_INT);
+                $ins -> bindvalue('3', $request_flg, PDO::PARAM_INT);
                 $ins -> execute();
                 $db -> commit();
             }catch(PDOException $e){
                 $db -> rollback();
                 die("INSERTエラー：{$e -> getMessage()}");
             }
-        }
+    }
 
-    function search_user_id($account_id, $my_account_id)
+    //ユーザの情報からrequest_infoのデータをとってくる
+    function select_request_info($my_id, $account_id)
     {        //友達検索のID認証
         try {
             $db = GetDb();
-            $statement = 'SELECT * FROM account_info WHERE account_id = ?';
+            $statement = 'SELECT * FROM request_info WHERE user_request = ? AND user_requested = ? ';
             $sel = $db->prepare($statement);
-            $sel->bindValue(1, $account_id);
+            $sel->bindValue(1, $my_id);
+            $sel->bindValue(2, $account_id);
             $sel->execute();
             $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);
             if (!(empty($ResultSet))) {
-                foreach ($ResultSet as $data) {
-                    if ($data['account_id'] === $account_id && $data['account_id'] !== $my_account_id ) {
-                        return $data;
-                    } else {
-                        return null;
-                    }
-                }
-
-            } else {
-                return false;
+                return $ResultSet;
             }
+            return null;
         } catch (PDOException $e) {
             die("SELECTエラー：{$e -> getMessage()}");
         }
-
-
-        function Delete_Contribution($contents_id)
-        {  //削除ボタンの際に利用
-            try {
-                $db = GetDb();
-                $statement = 'DELETE FROM timeline_info WHERE id = ? ';
-                $db->beginTransaction();
-                $del = $db->prepare($statement);
-                $del->bindValue('1', $contents_id);
-                $del->execute();
-                $db->commit();
-            } catch (PDOException $e) {
-                $db->rollback();
-                die("DELETEエラー：{$e -> getMessage()}");
-            }
-        }
-
-
     }
+
+    function search_user_id($account_id, $my_id)
+    {
+        try {
+            $db = GetDb();
+            $statement = 'SELECT account_info.id, account_id, name, user_request, user_requested FROM account_info LEFT OUTER JOIN request_info ON account_info.id = user_request 
+                          OR account_info.id = user_requested WHERE account_id = ?';
+            $sel = $db->prepare($statement);
+            $sel->bindValue(1, $account_id);
+//            $sel->bindValue(2, $my_id);
+            $sel->execute();
+            $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);
+            if (!(empty($ResultSet))) {
+                $arr_result = array();
+                foreach ($ResultSet as $data) {
+                    if ($data['account_id'] === $account_id && $data['id'] !== $my_id) {
+                        $arr_result[] = $data;
+                    }
+                }
+                return $arr_result;
+            }
+            return null;
+        } catch (PDOException $e) {
+            die("SELECTエラー：{$e -> getMessage()}");
+        }
+    }
+
+    //友達申請を表すフラグ'friends_request_flg'が1で'friends_accept_flg'と'friends_flg'がnullつまり申請が来ているが、まだ友達になっていない場合に申請者のIDを取得
+    function select_request_user_info($user_type, $where, $user_id)
+    {        //友達検索のID認証
+        try {
+            $db = GetDb();
+            $statement = 'SELECT account_info.id, name FROM account_info INNER JOIN request_info ON account_info.id = '.$user_type.' 
+                            WHERE '.$where.' = ? AND friends_request_flg = 1 AND friends_flg IS NULL';
+            $sel = $db->prepare($statement);
+            $sel->bindValue(1, $user_id, PDO::PARAM_INT);
+            $sel->execute();
+            $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);
+            if (!(empty($ResultSet))) {
+                return $ResultSet;
+            }
+            return array(array());
+        } catch (PDOException $e) {
+            die("SELECTエラー：{$e -> getMessage()}");
+        }
+    }
+
+
+

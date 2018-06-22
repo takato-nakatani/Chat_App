@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-21 03:50:42
+/* Smarty version 3.1.31, created on 2018-06-23 03:49:26
   from "/src/KeizibanTmp/friends_search.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2aa202cd4ad4_20703447',
+  'unifunc' => 'content_5b2d44b6c6f481_10016335',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24' => 
     array (
       0 => '/src/KeizibanTmp/friends_search.tpl',
-      1 => 1529520453,
+      1 => 1529693364,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2aa202cd4ad4_20703447 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2d44b6c6f481_10016335 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -46,19 +46,33 @@ function content_5b2aa202cd4ad4_20703447 (Smarty_Internal_Template $_smarty_tpl)
 <form method = "POST" action = "Friends_search.php">
     検索したい友達のユーザIDを入力してください。
     <input id = 'search_id' type = 'text' name = 'input_friends_id' size = '30' maxlength="20">
-    <input type = 'submit' name = 'Request_Management_button' value = '検索'>
+    <input type = 'submit' name = 'search_button' value = '検索'>
 </form>
 <body>
-    <?php if ($_smarty_tpl->tpl_vars['friends_data']->value != NULL) {?>
-        <?php echo $_smarty_tpl->tpl_vars['friends_data']->value['name'];?>
+    <?php if ($_smarty_tpl->tpl_vars['searched_user_data']->value != NULL) {?>
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['searched_user_data']->value, 'data');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['data']->value) {
+?>
+            <?php if ($_smarty_tpl->tpl_vars['request_info']->value[0]['friends_request_flg'] != 1 && $_smarty_tpl->tpl_vars['requested_info']->value[0]['friends_request_flg'] != 1) {?>
+                    <?php echo $_smarty_tpl->tpl_vars['data']->value['name'];?>
 
-        <form method = "POST" action = "Friends_search.php">
-          <input type = "submit" name = "request_button" value = "友達リクエスト">
-          <input type = "hidden" name = "requested_user_id" value = <?php echo $_smarty_tpl->tpl_vars['friends_data']->value['id'];?>
+                    <form method = "POST" action = "Friends_search.php">
+                      <input type = "submit" name = "request_button" value = "友達リクエスト">
+                      <input type = "hidden" name = "requested_user_id" value = <?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
 >
-        </form>
-    <?php } else { ?>
-        一致したユーザはいませんでした。
+                    </form>
+            <?php }?>
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
+    <?php }?>
+    <?php if (($_smarty_tpl->tpl_vars['searched_user_data']->value == NULL || $_smarty_tpl->tpl_vars['data']->value['friends_request_flg'] == 1) && $_smarty_tpl->tpl_vars['cnt']->value == 1) {?>
+        一致するユーザは存在しません。ユーザIDが違うか、すでにリクエストを出している、または友達の可能性があります。
     <?php }?>
 </body>
 </html><?php }
