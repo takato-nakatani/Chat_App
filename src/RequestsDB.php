@@ -149,5 +149,24 @@
         }
     }
 
+    function select_user_request($my_id)
+    {        //友達検索のID認証
+        try {
+            $db = GetDb();
+            $statement = 'SELECT * FROM request_info WHERE user_request = ? OR user_requested = ? ';
+            $sel = $db->prepare($statement);
+            $sel->bindValue(1, $my_id);
+            $sel->bindValue(2, $my_id);
+            $sel->execute();
+            $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);
+            if (!(empty($ResultSet))) {
+                return $ResultSet;
+            }
+            return null;
+        } catch (PDOException $e) {
+            die("SELECTエラー：{$e -> getMessage()}");
+        }
+    }
+
 
 

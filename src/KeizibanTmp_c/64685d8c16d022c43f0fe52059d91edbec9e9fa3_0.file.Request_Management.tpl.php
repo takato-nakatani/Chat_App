@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-23 13:53:51
+/* Smarty version 3.1.31, created on 2018-06-24 00:28:17
   from "/src/KeizibanTmp/Request_Management.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2dd25fcc77b8_05066868',
+  'unifunc' => 'content_5b2e67112bab60_76382483',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64685d8c16d022c43f0fe52059d91edbec9e9fa3' => 
     array (
       0 => '/src/KeizibanTmp/Request_Management.tpl',
-      1 => 1529729629,
+      1 => 1529747617,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2dd25fcc77b8_05066868 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2e67112bab60_76382483 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -87,12 +87,11 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['data']->value) {
 ?>
-            
             <?php echo $_smarty_tpl->tpl_vars['data']->value['name'];?>
 さん
             <input type = 'submit' name = 'Request_cancel_button<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
 ' value = '申請取り消し'><br /><br /><br />
-            <input type = "hidden" name = "requested_user_id<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
+            <input type = "hidden" name = "requested_user_id<?php echo $_smarty_tpl->tpl_vars['cnt']->value++;?>
 " value = <?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
 >
         <?php

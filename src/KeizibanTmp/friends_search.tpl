@@ -26,7 +26,7 @@
 <body>
     {if $searched_user_data != NULL}
         {foreach from = $searched_user_data item = $data}
-            {if $request_info[0]['friends_request_flg'] != 1 && $requested_info[0]['friends_request_flg'] != 1}
+            {if $request_info[0]['friends_request_flg'] != 1 AND $requested_info[0]['friends_request_flg'] != 1}
                     {$data['name']}
                     <form method = "POST" action = "Friends_search.php">
                       <input type = "submit" name = "request_button" value = "友達リクエスト">

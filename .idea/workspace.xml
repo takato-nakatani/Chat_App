@@ -2,23 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d566129-464d-48ce-a008-591f5cb5d04d" name="デフォルト" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chat_List.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FriendsDB.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FriendsManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PostManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UserManager.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EditCompletion.php" afterPath="$PROJECT_DIR$/src/EditCompletion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_List.php" afterPath="$PROJECT_DIR$/src/Chat_List.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Room.php" afterPath="$PROJECT_DIR$/src/Chat_Room.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EditContents.php" afterPath="$PROJECT_DIR$/src/EditContents.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Encode.php" afterPath="$PROJECT_DIR$/src/Encode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FriendsDB.php" afterPath="$PROJECT_DIR$/src/FriendsDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Friends_search.php" afterPath="$PROJECT_DIR$/src/Friends_search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Keiziban3.php" afterPath="$PROJECT_DIR$/src/Keiziban3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Login.php" afterPath="$PROJECT_DIR$/src/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyContribution.php" afterPath="$PROJECT_DIR$/src/MyContribution.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Registration.php" afterPath="$PROJECT_DIR$/src/Registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PostDB.php" afterPath="$PROJECT_DIR$/src/PostDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Request_Management.php" afterPath="$PROJECT_DIR$/src/Request_Management.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/request_completion.php" afterPath="$PROJECT_DIR$/src/request_completion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RequestsDB.php" afterPath="$PROJECT_DIR$/src/RequestsDB.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,41 +34,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="friends_search.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl">
+      <file leaf-file-name="MyContribution.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyContribution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="21">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Keiziban3.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Keiziban3.tpl">
+      <file leaf-file-name="PostDB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PostDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="158">
+              <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+              <folding>
+                <marker date="1529767469879" expanded="true" signature="256:322" ph="INSERT INTO timeline_info... " />
+                <marker date="1529767469879" expanded="true" signature="975:1025" ph="UPDATE timel... " />
+                <marker date="1529767469879" expanded="true" signature="1532:1570" ph="DELETE FROM " />
+                <marker date="1529767469879" expanded="true" signature="2011:2170" ph="SELECT timel... timeline_info" />
+                <marker date="1529767469879" expanded="true" signature="2011:2171" ph="SELECT timel... timeline_info" />
+                <marker date="1529767469879" expanded="true" signature="2905:2938" ph="SELECT * FRO... timeline_info" />
+                <marker date="1529767469879" expanded="true" signature="2905:2939" ph="SELECT * FRO... timeline_info" />
+                <marker date="1529767469879" expanded="true" signature="2905:2958" ph="SELECT conte... timeline_info" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditContents.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EditContents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat_List.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat_List.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chat_List.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="546">
+              <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Friends_search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Friends_search.php">
+      <file leaf-file-name="Edit.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request_Management.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Request_Management.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendsDB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FriendsDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+              <folding>
+                <marker date="1529767638585" expanded="true" signature="168:237" ph="INSERT INTO friends_info... " />
+                <marker date="1529767638585" expanded="true" signature="838:878" ph="SELECT id FR... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="838:879" ph="SELECT id FR... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="838:887" ph="SELECT id FR... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="1473:1636" ph="SELECT frien... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="2209:2301" ph="INSERT INTO chat_info... " />
+                <marker date="1529767638585" expanded="true" signature="3105:3112" ph="SELECT * FRO... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="3105:3248" ph="SELECT * FRO... friends_info" />
+                <marker date="1529767638585" expanded="true" signature="3925:3959" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat_List.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -72,55 +146,22 @@
       <file leaf-file-name="RequestsDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="131" column="114" lean-forward="false" selection-start-line="131" selection-start-column="114" selection-end-line="149" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
               <folding>
-                <marker date="1529730656103" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
-                <marker date="1529730656103" expanded="true" signature="754:777" ph="UPDATE reque... " />
-                <marker date="1529730656103" expanded="true" signature="754:841" ph="UPDATE reque... " />
-                <marker date="1529730656103" expanded="true" signature="1740:1810" ph="DELETE FROM " />
-                <marker date="1529730656103" expanded="true" signature="2261:2372" ph="DELETE FROM " />
-                <marker date="1529730656103" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
-                <marker date="1529730656103" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
-                <marker date="1529730656103" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
-                <marker date="1529730656103" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
-                <marker date="1529730656103" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
-                <marker date="1529730656103" expanded="true" signature="5397:5605" ph="SELECT accou... account_info" />
+                <marker date="1529744436727" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
+                <marker date="1529744436727" expanded="true" signature="754:777" ph="UPDATE reque... " />
+                <marker date="1529744436727" expanded="true" signature="754:841" ph="UPDATE reque... " />
+                <marker date="1529744436727" expanded="true" signature="1740:1810" ph="DELETE FROM " />
+                <marker date="1529744436727" expanded="true" signature="2261:2372" ph="DELETE FROM " />
+                <marker date="1529744436727" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
+                <marker date="1529744436727" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
+                <marker date="1529744436727" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
+                <marker date="1529744436727" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
+                <marker date="1529744436727" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
+                <marker date="1529744436727" expanded="true" signature="5397:5605" ph="SELECT accou... account_info" />
+                <marker date="1529744436727" expanded="true" signature="6160:6231" ph="SELECT * FRO... request_info" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendsDB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FriendsDB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <marker date="1529731128029" expanded="true" signature="168:237" ph="INSERT INTO friends_info... " />
-                <marker date="1529731128029" expanded="true" signature="856:889" ph="SELECT id FR... friends_info" />
-                <marker date="1529731128029" expanded="true" signature="856:931" ph="SELECT id FR... friends_info" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Request_Management.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Request_Management.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Request_Management.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-571">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,6 +194,10 @@
       <find>searc</find>
       <find>header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/</find>
       <find>select_request_user_info</find>
+      <find>Display_Contribution</find>
+      <find>Select_contents</find>
+      <find>Select</find>
+      <find>var_dump</find>
     </findStrings>
     <replaceStrings>
       <replace>account_info</replace>
@@ -176,27 +221,32 @@
       <list>
         <option value="$PROJECT_DIR$/src/DbManager3.php" />
         <option value="$PROJECT_DIR$/src/DB_Connection.php" />
-        <option value="$PROJECT_DIR$/src/Chat_Room.php" />
         <option value="$PROJECT_DIR$/src/DB_Operation.php" />
-        <option value="$PROJECT_DIR$/src/Login.php" />
-        <option value="$PROJECT_DIR$/src/Keiziban3.php" />
         <option value="$PROJECT_DIR$/src/PostManager.php" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Keiziban3.tpl" />
         <option value="$PROJECT_DIR$/src/Registration.php" />
         <option value="$PROJECT_DIR$/src/UserManager.php" />
-        <option value="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" />
         <option value="$PROJECT_DIR$/src/request_completion.php" />
-        <option value="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" />
         <option value="$PROJECT_DIR$/src/FriendsManager.php" />
-        <option value="$PROJECT_DIR$/src/EditContents.php" />
-        <option value="$PROJECT_DIR$/src/MyContribution.php" />
         <option value="$PROJECT_DIR$/src/EditCompletion.php" />
-        <option value="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" />
+        <option value="$PROJECT_DIR$/src/Encode.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" />
         <option value="$PROJECT_DIR$/src/RequestsDB.php" />
         <option value="$PROJECT_DIR$/src/Friends_search.php" />
-        <option value="$PROJECT_DIR$/src/FriendsDB.php" />
-        <option value="$PROJECT_DIR$/src/Request_Management.php" />
+        <option value="$PROJECT_DIR$/src/Chat_Room.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" />
+        <option value="$PROJECT_DIR$/src/Keiziban3.php" />
+        <option value="$PROJECT_DIR$/src/MyContribution.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" />
+        <option value="$PROJECT_DIR$/src/PostDB.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl" />
         <option value="$PROJECT_DIR$/src/Chat_List.php" />
+        <option value="$PROJECT_DIR$/src/FriendsDB.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl" />
+        <option value="$PROJECT_DIR$/src/EditContents.php" />
+        <option value="$PROJECT_DIR$/src/Login.php" />
+        <option value="$PROJECT_DIR$/src/Request_Management.php" />
       </list>
     </option>
   </component>
@@ -285,12 +335,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529399895837</updated>
       <workItem from="1529399897116" duration="702000" />
-      <workItem from="1529413040914" duration="78647000" />
+      <workItem from="1529413040914" duration="109052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79349000" />
+    <option name="totallyTimeSpent" value="109754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -384,23 +434,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -420,14 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -480,22 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EditContents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Keiziban3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EditCompletion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -504,98 +514,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl">
+    <entry file="file://$PROJECT_DIR$/src/Encode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="63">
+          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
+    <entry file="file://$PROJECT_DIR$/src/UserDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="131" column="114" lean-forward="false" selection-start-line="131" selection-start-column="114" selection-end-line="149" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
-            <marker date="1529730656103" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
-            <marker date="1529730656103" expanded="true" signature="754:777" ph="UPDATE reque... " />
-            <marker date="1529730656103" expanded="true" signature="754:841" ph="UPDATE reque... " />
-            <marker date="1529730656103" expanded="true" signature="1740:1810" ph="DELETE FROM " />
-            <marker date="1529730656103" expanded="true" signature="2261:2372" ph="DELETE FROM " />
-            <marker date="1529730656103" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
-            <marker date="1529730656103" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
-            <marker date="1529730656103" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
-            <marker date="1529730656103" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
-            <marker date="1529730656103" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
-            <marker date="1529730656103" expanded="true" signature="5397:5605" ph="SELECT accou... account_info" />
+            <marker date="1529519700255" expanded="true" signature="234:302" ph="INSERT INTO account_info... " />
+            <marker date="1529519700255" expanded="true" signature="885:949" ph="SELECT * FRO... account_info" />
+            <marker date="1529519700255" expanded="true" signature="1974:2038" ph="SELECT * FRO... account_info" />
+            <marker date="1529519700255" expanded="true" signature="2947:2986" ph="SELECT * FRO... account_info" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FriendsDB.php">
+    <entry file="file://$PROJECT_DIR$/src/Friends_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <marker date="1529731128029" expanded="true" signature="168:237" ph="INSERT INTO friends_info... " />
-            <marker date="1529731128029" expanded="true" signature="856:889" ph="SELECT id FR... friends_info" />
-            <marker date="1529731128029" expanded="true" signature="856:931" ph="SELECT id FR... friends_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Request_Management.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyContribution.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="441">
+          <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="389">
+          <caret line="22" column="66" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Keiziban3.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="231">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friends_search.php">
+    <entry file="file://$PROJECT_DIR$/src/Chat_Room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Keiziban3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyContribution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+          <folding>
+            <marker date="1529767469879" expanded="true" signature="256:322" ph="INSERT INTO timeline_info... " />
+            <marker date="1529767469879" expanded="true" signature="975:1025" ph="UPDATE timel... " />
+            <marker date="1529767469879" expanded="true" signature="1532:1570" ph="DELETE FROM " />
+            <marker date="1529767469879" expanded="true" signature="2011:2170" ph="SELECT timel... timeline_info" />
+            <marker date="1529767469879" expanded="true" signature="2011:2171" ph="SELECT timel... timeline_info" />
+            <marker date="1529767469879" expanded="true" signature="2905:2938" ph="SELECT * FRO... timeline_info" />
+            <marker date="1529767469879" expanded="true" signature="2905:2939" ph="SELECT * FRO... timeline_info" />
+            <marker date="1529767469879" expanded="true" signature="2905:2958" ph="SELECT conte... timeline_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat_List.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="546">
+          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FriendsDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <marker date="1529767638585" expanded="true" signature="168:237" ph="INSERT INTO friends_info... " />
+            <marker date="1529767638585" expanded="true" signature="838:878" ph="SELECT id FR... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="838:879" ph="SELECT id FR... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="838:887" ph="SELECT id FR... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="1473:1636" ph="SELECT frien... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="2209:2301" ph="INSERT INTO chat_info... " />
+            <marker date="1529767638585" expanded="true" signature="3105:3112" ph="SELECT * FRO... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="3105:3248" ph="SELECT * FRO... friends_info" />
+            <marker date="1529767638585" expanded="true" signature="3925:3959" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+          <folding>
+            <marker date="1529744436727" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
+            <marker date="1529744436727" expanded="true" signature="754:777" ph="UPDATE reque... " />
+            <marker date="1529744436727" expanded="true" signature="754:841" ph="UPDATE reque... " />
+            <marker date="1529744436727" expanded="true" signature="1740:1810" ph="DELETE FROM " />
+            <marker date="1529744436727" expanded="true" signature="2261:2372" ph="DELETE FROM " />
+            <marker date="1529744436727" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
+            <marker date="1529744436727" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
+            <marker date="1529744436727" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
+            <marker date="1529744436727" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
+            <marker date="1529744436727" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
+            <marker date="1529744436727" expanded="true" signature="5397:5605" ph="SELECT accou... account_info" />
+            <marker date="1529744436727" expanded="true" signature="6160:6231" ph="SELECT * FRO... request_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EditContents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Request_Management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -27,37 +27,13 @@
     $arr_requested = select_request_user_info('user_request','user_requested', $user_id);
     $smarty -> assign("arr_requested", $arr_requested);
 
-//    //自分が申請されているときに"承認"や"拒否"のボタンを押したとき
-//    for ($i = 0; $i < count($arr_requested); $i++){
-//        var_dump($arr_requested);
-//        var_dump($_POST["requester_id{$i}"]);
-//        if(isset($_POST["Request_Accept_button{$i}"])){
-//            $requester_id = $_POST["requester_id{$i}"];
-//            Update_flg('friends_flg', 1, $LoginUserId, $requester_id);
-//            insert_friends_data($LoginUserId, $requester_id);
-//            insert_friends_data($requester_id, $LoginUserId);
-//            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Request_Management.php');
-//        }
-//
-//        if (isset($_POST["Request_Refuse_button{$i}"])) {
-//            $requester_id = $_POST["requester_id{$i}"];
-////            Delete_request($requester_id, $user_id);
-////            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Request_Management.php');
-////            insert_flg('request_info', 'friends_accept_flg', $accept_flg);
-//        }
-//    }
-
     //自分が申請されているときに"承認"や"拒否"のボタンを押したとき
     for($i = 0; $i < count($arr_requested); $i++){
-        var_dump($arr_requested);
-        var_dump($_POST["requester_id{$i}"]);
         if(isset($_POST["Request_Accept_button{$i}"])){
             $requester_id = $_POST["requester_id{$i}"];
             Update_flg('friends_flg', 1, $requester_id, $LoginUserId);
-            select_friends_info($user_id, $requester_id);
             insert_friends_data($LoginUserId, $requester_id);
             insert_friends_data($requester_id, $LoginUserId);
-
             header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Request_Management.php');
         }
         if(isset($_POST["Request_Refuse_button{$i}"])){
@@ -68,7 +44,7 @@
     }
 
     //自分が申請したリクエストを取り消すとき
-    for ($i = 1; $i < count($arr_requests[0]); $i++){
+    for ($i = 0; $i < count($arr_requests); $i++){
         if(isset($_POST["Request_cancel_button{$i}"])){
             $requested_user_id = $_POST["requested_user_id{$i}"];
             Delete_request($user_id, $requested_user_id);

@@ -41,10 +41,9 @@
     承認待ちのリクエスト<br />
     {if $arr_request != array(array())}
         {foreach from = $arr_request item = $data}
-            {*{$cnt++} *}
             {$data['name']}さん
             <input type = 'submit' name = 'Request_cancel_button{$cnt}' value = '申請取り消し'><br /><br /><br />
-            <input type = "hidden" name = "requested_user_id{$cnt}" value = {$data['id']}>
+            <input type = "hidden" name = "requested_user_id{$cnt++}" value = {$data['id']}>
         {/foreach}
     {else}
         申請中のリクエストはありません。<br /><br /><br />

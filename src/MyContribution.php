@@ -5,6 +5,7 @@
     session_start();
     require_once 'UserDB.php';
     require_once 'PostDB.php';
+    require_once 'Encode.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
     $smarty = new Smarty();
     $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
@@ -29,37 +30,40 @@
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Keiziban3.php');
     }
 
-//    $fetchAll = Select_Inner_Join($LoginUserId);  // 内部結合した結果セットを取得する関数。
-    $fetchAll = Select_contribution();
+    $friends_contribution = Select_contribution($user_id);
+
     $cnt = 1;  //ボタンの個別番号
     $smarty -> assign('cnt', $cnt);
     $smarty -> assign('login_user_id', $LoginUserId);
-    $smarty -> assign('fetchAll', $fetchAll);
+    $smarty -> assign('friends_contribution', $friends_contribution);
 
 
-    for ($i = 1; $i < count($fetchAll[0]); $i++){    //投稿文の数だけfor文でループ
-        if(isset($_POST["editbutton{$i}"])){   //どのボタンが押されたか
-            $contents_id = $_POST["contents_id{$i}"];  //押されたボタンのhiddenから投稿文のidを取得
-            editbutton($contents_id);   //投稿文のidをセッションで保持して編集画面へ移動する関数
+    if($friends_contribution != null){
+        for ($i = 1; $i < count($friends_contribution[0]); $i++){    //投稿文の数だけfor文でループ
+            if(isset($_POST["editbutton{$i}"])){   //どのボタンが押されたか
+                $contents_id = $_POST["contents_id{$i}"];  //押されたボタンのhiddenから投稿文のidを取得
+                editbutton($contents_id);   //投稿文のidをセッションで保持して編集画面へ移動する関数
+            }
+        }
+
+
+        for ($i = 1; $i < count($friends_contribution[0]); $i++){
+            if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
+                $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
+                Delete_Contribution($contents_id);   //投稿文を削除する関数
+                header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
+            }
         }
     }
 
-
-    for ($i = 1; $i < count($fetchAll[0]); $i++){
-        if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
-            $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
-            Delete_Contribution($contents_id);   //投稿文を削除する関数
-            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
-        }
-    }
 
     if(isset($_POST['contributionbutton'])){
         if(isset($_POST['contribution'])){
             if(!(empty($_POST['contribution']))){
-                $PostContribution = $_POST['contribution'];
-                if(mb_strlen($PostContribution) > 100){
+                if(mb_strlen($_POST['contribution']) > 100){
                     print('100字以内で入力してください。');
                 }else{
+                    $PostContribution = e($_POST['contribution']);
                     insert_contribution($PostContribution, $user_id);
                     header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
                 }

@@ -28,5 +28,3 @@
     }
 
 
-    Display_Contribution();
-

@@ -28,7 +28,7 @@
     function Update_Contribution($contents_id, $contents){  //編集ボタンの際に利用
         try{
             $db = GetDb();
-            $statement = 'UPDATE timeline_info SET contents = ? WHERE timeline_info.id = ? ';
+            $statement = 'UPDATE timeline_info SET contents = ? WHERE id = ? ';
             $db -> beginTransaction();
             $upd = $db -> prepare($statement);
             $upd -> bindvalue('1', $contents);
@@ -56,57 +56,21 @@
         }
     }
 
-    function Display_Contribution(){  //全員の投稿を表示
-        try{
-            $db = GetDb();
-            $statement = 'SELECT * FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id';
-            $sel = $db -> prepare($statement);
-            $sel -> execute();
-            $fetchAll = $sel -> fetchAll(PDO::FETCH_ASSOC);
-            if(!(empty($fetchAll))){
-                foreach($fetchAll as $data){
-                    $name = e($data['account_id']);
-                    $contents = $data['contents'];
-                    $time = $data['time'];
-                    print("{$name}　さんの投稿　");
-                    echo("<".$time.">");
-                    echo nl2br("\n");
-                    echo(nl2br(e($contents)));
-                    echo nl2br("\n\n");
-                }
-            }
-        }catch(PDOException $e){
-            $db -> rollback();
-            die("エラーメッセージ：{$e -> getMessage()}");
-        }
-    }
-
-    function Select_Inner_Join($user_id){  //テーブルを外部キー制約のもと内部結合させて取得
-        try{
-            $db = GetDb();
-            $statement = 'SELECT timeline_info.id, contents, user_id, time, account_id FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id WHERE user_id = ?';
-            $sel = $db -> prepare($statement);
-            $sel -> bindValue('1', $user_id);
-            $sel -> execute();
-            $fetchAll = $sel -> fetchAll(PDO::FETCH_ASSOC);
-            return $fetchAll;
-        }catch(PDOException $e){
-            die("エラーメッセージ：{$e -> getMessage()}");
-        }
-    }
-
-function Select_contribution(){  //投稿文を取得
+function Select_contribution($user_id){  //自分以外の投稿文を取得
     try{
         $db = GetDb();
-        $statement = 'SELECT timeline_info.id, contents, user_id, time, account_id FROM timeline_info INNER JOIN account_info ON timeline_info.user_id = account_info.id';
+        $statement = 'SELECT timeline_info.id, contents, user_id, time, friends_user_id FROM timeline_info INNER JOIN friends_info ON user_id = friends_user_id AND ? = login_user_id;';
         $sel = $db -> prepare($statement);
+        $sel -> bindValue(1 , $user_id, PDO::PARAM_INT);
         $sel -> execute();
         $fetchAll = $sel -> fetchAll(PDO::FETCH_ASSOC);
-        return $fetchAll;
+        if(!empty($fetchAll)){
+            return $fetchAll;
+        }
+        return null;
     }catch(PDOException $e){
         die("エラーメッセージ：{$e -> getMessage()}");
     }
-
 }
 
 
@@ -115,23 +79,17 @@ function Select_contribution(){  //投稿文を取得
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'EditContents.php');
     }
 
-    function Select_contents($contents_id){  //投稿文のidから投稿文を取得
+    function Select_contents($where_cols, $where_value){  //投稿文の情報から投稿文を取得
         try{
             $db = GetDb();
-            $statement = 'SELECT contents FROM timeline_info WHERE id = ?';
+            $statement = 'SELECT * FROM timeline_info WHERE '.$where_cols.' = ?;';
             $sel = $db -> prepare($statement);
-            $sel -> bindValue(1 , $contents_id);
+//            $sel -> bindValue(1 , $where_cols, PDO::PARAM_STR);
+            $sel -> bindValue(1 , $where_value, PDO::PARAM_INT);
             $sel -> execute();
 
             $ResultSet = $sel -> fetchAll(PDO::FETCH_ASSOC);
-            $contents_data = array();
-            foreach($ResultSet as $data_array){
-                foreach($data_array as $data){
-                    $contents_data = $data;
-                }
-
-            }
-            return $contents_data;
+            return $ResultSet;
 
 
         }catch(PDOException $e){

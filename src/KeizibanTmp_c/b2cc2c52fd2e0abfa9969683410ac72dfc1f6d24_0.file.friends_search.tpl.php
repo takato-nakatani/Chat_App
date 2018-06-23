@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-23 03:49:26
+/* Smarty version 3.1.31, created on 2018-06-23 17:55:46
   from "/src/KeizibanTmp/friends_search.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2d44b6c6f481_10016335',
+  'unifunc' => 'content_5b2e0b12e1f684_51572523',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24' => 
     array (
       0 => '/src/KeizibanTmp/friends_search.tpl',
-      1 => 1529693364,
+      1 => 1529744111,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2d44b6c6f481_10016335 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2e0b12e1f684_51572523 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
