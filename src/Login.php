@@ -4,7 +4,7 @@
     session_start();
     require_once 'DbManager3.php';
     require_once 'Encode.php';
-    require_once 'UserManager.php';
+    require_once 'UserDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
                     $decision = Login_Certification($LoginName, $LoginPass);  //ログインの認証
 
                     if ($decision) {
-                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Keiziban3.php');
+                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Keiziban3.php');
                     } else {
                         var_dump($_POST['Loginname']);
                         var_dump($_POST['Loginpass']);

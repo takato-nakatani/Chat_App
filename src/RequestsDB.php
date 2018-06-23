@@ -23,13 +23,16 @@
     function Update_flg($flg_name, $value, $user_request, $user_requested){
         try{
             $db = GetDb();
-            $statement = 'UPDATE request_info SET ? = ? WHERE user_request = ? AND user_requested = ?';
+            $statement = 'UPDATE request_info SET '.$flg_name.' = ? WHERE user_request = ? AND user_requested = ?';
             $db -> beginTransaction();
             $upd = $db -> prepare($statement);
-            $upd -> bindvalue('1', $flg_name, PDO::PARAM_STR);
-            $upd -> bindvalue('2', $value, PDO::PARAM_INT);
-            $upd -> bindvalue('3', $user_request,PDO::PARAM_INT);
-            $upd -> bindvalue('4', $user_requested,PDO::PARAM_INT);
+//            $upd -> bindvalue('1', $flg_name, PDO::PARAM_STR);
+//            $upd -> bindvalue('2', $value, PDO::PARAM_INT);
+//            $upd -> bindvalue('3', $user_request,PDO::PARAM_INT);
+//            $upd -> bindvalue('4', $user_requested,PDO::PARAM_INT);
+            $upd -> bindvalue('1', $value, PDO::PARAM_INT);
+            $upd -> bindvalue('2', $user_request,PDO::PARAM_INT);
+            $upd -> bindvalue('3', $user_requested,PDO::PARAM_INT);
             $upd -> execute();
             $db -> commit();
         }catch(PDOException $e){
@@ -52,10 +55,10 @@
         }
     }
 
-    function Delete_depulication(){  //重複データを削除
+    function Delete_depulication($table, $cols){  //重複データを削除
         try{
             $db = GetDb();
-            $statement = 'DELETE FROM request_info WHERE id Not In( SELECT * FROM ( SELECT Min(id) FROM request_info GROUP BY user_request, user_requested ) b );';
+            $statement = 'DELETE FROM '.$table.' WHERE id Not In( SELECT * FROM ( SELECT Min(id) FROM '.$table.' GROUP BY '.$cols.' ) b );';
             $upd = $db -> prepare($statement);
             $upd -> execute();
         }catch(PDOException $e){

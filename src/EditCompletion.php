@@ -17,7 +17,7 @@
 
     if(isset($_POST['backtomypage'])){
         $_SESSION['contents'] = NULL;
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/MyContribution.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
     }
 ?>
 </body>

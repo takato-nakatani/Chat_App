@@ -23,19 +23,21 @@
     申請されているリクエスト<br />
     {if $arr_requested != array(array())}
         {foreach from = $arr_requested item = $data}
-            {*{$cnt++} *}
             {$data['name']}さん
-            <input type = 'submit' name = 'Request_Accept_button{$cnt}' value = '承認'>
-            <input type = "hidden" name = "Request_Accept{$cnt}" value = 1>
+            {$data['id']}
+            <input type = 'submit' name = "Request_Accept_button{$cnt}" value = '承認'>
+            <input type = "hidden" name = "Request_Accept{$cnt}" value = "">
 
-            <input type = 'submit' name = 'Request_Refuse _button{$cnt}' value = '拒否'><br /><br /><br />
-            <input type = "hidden" name = "Request_Refuse{$cnt}" value = 0>
+            <input type = 'submit' name = "Request_Refuse_button{$cnt}" value = '拒否'><br /><br /><br />
+            <input type = "hidden" name = "Request_Refuse{$cnt}" value = "">
             <input type = "hidden" name = "requester_id{$cnt}" value = {$data['id']} >
+            {*{$cnt++} *}
         {/foreach}
     {else}
         承認待ちのリクエストはありません。<br /><br /><br />
     {/if}
 
+<form method = "POST" action = "Request_Management.php">
     承認待ちのリクエスト<br />
     {if $arr_request != array(array())}
         {foreach from = $arr_request item = $data}

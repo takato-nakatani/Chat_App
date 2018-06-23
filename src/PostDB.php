@@ -112,7 +112,7 @@ function Select_contribution(){  //投稿文を取得
 
     function editbutton($contents_id){  //マイページで編集ボタンが押された際に実行される
         $_SESSION['contents'] = $contents_id;
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/EditContents.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'EditContents.php');
     }
 
     function Select_contents($contents_id){  //投稿文のidから投稿文を取得

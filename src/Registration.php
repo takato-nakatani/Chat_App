@@ -3,7 +3,7 @@
 
     require_once 'DbManager3.php';
     require_once 'Encode.php';
-    require_once 'UserManager.php';
+    require_once 'UserDB.php';
 
 ?>
 
@@ -52,7 +52,7 @@
 
                         $db = GetDB();
                         Insert_User($user_name, $user_id, $user_pass);
-                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/RegistrationCompletion.php');
+                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'RegistrationCompletion.php');
                     }
 
                 }

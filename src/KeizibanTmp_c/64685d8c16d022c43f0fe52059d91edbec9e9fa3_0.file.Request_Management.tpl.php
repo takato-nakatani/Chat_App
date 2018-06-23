@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-23 03:39:10
+/* Smarty version 3.1.31, created on 2018-06-23 13:53:51
   from "/src/KeizibanTmp/Request_Management.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2d424ea2e930_34350414',
+  'unifunc' => 'content_5b2dd25fcc77b8_05066868',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64685d8c16d022c43f0fe52059d91edbec9e9fa3' => 
     array (
       0 => '/src/KeizibanTmp/Request_Management.tpl',
-      1 => 1529692747,
+      1 => 1529729629,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2d424ea2e930_34350414 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2dd25fcc77b8_05066868 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -52,21 +52,23 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['data']->value) {
 ?>
-            
             <?php echo $_smarty_tpl->tpl_vars['data']->value['name'];?>
 さん
-            <input type = 'submit' name = 'Request_Accept_button<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
-' value = '承認'>
-            <input type = "hidden" name = "Request_Accept<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
-" value = 1>
+            <?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
 
-            <input type = 'submit' name = 'Request_Refuse _button<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
-' value = '拒否'><br /><br /><br />
+            <input type = 'submit' name = "Request_Accept_button<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
+" value = '承認'>
+            <input type = "hidden" name = "Request_Accept<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
+" value = "">
+
+            <input type = 'submit' name = "Request_Refuse_button<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
+" value = '拒否'><br /><br /><br />
             <input type = "hidden" name = "Request_Refuse<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
-" value = 0>
+" value = "">
             <input type = "hidden" name = "requester_id<?php echo $_smarty_tpl->tpl_vars['cnt']->value;?>
 " value = <?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
  >
+            
         <?php
 }
 }
@@ -77,6 +79,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
         承認待ちのリクエストはありません。<br /><br /><br />
     <?php }?>
 
+<form method = "POST" action = "Request_Management.php">
     承認待ちのリクエスト<br />
     <?php if ($_smarty_tpl->tpl_vars['arr_request']->value != array(array())) {?>
         <?php

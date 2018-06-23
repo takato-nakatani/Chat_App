@@ -1,4 +1,5 @@
 <?php
+<?php
     session_start();
     require_once 'UserDB.php';
     require_once 'RequestsDB.php';

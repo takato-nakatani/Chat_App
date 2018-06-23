@@ -4,8 +4,8 @@
 
 
     session_start();
-    require_once 'UserManager.php';
-    require_once 'PostManager.php';
+    require_once 'UserDB.php';
+    require_once 'PostDB.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
 
@@ -24,7 +24,7 @@
 
     if(isset($_POST['Logoutbutton'])){
         session_destroy();
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Login.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
 

@@ -3,9 +3,8 @@
 
 
     session_start();
-    require_once 'UserManager.php';
-    require_once 'PostManager.php';
-    require_once 'FriendsManager.php';
+    require_once 'UserDB.php';
+    require_once 'PostDB.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
     $smarty = new Smarty();
     $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
@@ -23,11 +22,11 @@
 
     if(isset($_POST['Logoutbutton'])){  //ログアウトボタンが押されたときの処理
         session_destroy();      //保持していたユーザidを破棄
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Login.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
     if(isset($_POST['homebutton'])){   //ホームボタンが押されたときの処理
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/Keiziban3.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Keiziban3.php');
     }
 
 //    $fetchAll = Select_Inner_Join($LoginUserId);  // 内部結合した結果セットを取得する関数。
@@ -50,7 +49,7 @@
         if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
             $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
             Delete_Contribution($contents_id);   //投稿文を削除する関数
-            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/MyContribution.php');
+            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
         }
     }
 
@@ -62,7 +61,7 @@
                     print('100字以内で入力してください。');
                 }else{
                     insert_contribution($PostContribution, $user_id);
-                    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/MyContribution.php');
+                    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
                 }
             }else{
                 echo("投稿文を入力してください。");
