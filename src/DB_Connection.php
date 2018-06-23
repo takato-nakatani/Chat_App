@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: TAKATO
- * Date: 2018/06/20
- * Time: 19:09
- */
 
 class DB_Connection
 {

@@ -43,7 +43,7 @@
                     Update_Contribution($contents_id, $after_edit);
                     $_SESSION['contents_id'] = null;
             }
-            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'EditContents.php');
+            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Contribution.php');
         }
     }
 
@@ -52,9 +52,4 @@
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
-    if(isset($_POST['backtomypagebutton'])){
-        $_SESSION['contents'] = NULL;
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
-    }
-
-    $smarty -> display("Edit.tpl");
+    $smarty -> display("My_Contribution.tpl");

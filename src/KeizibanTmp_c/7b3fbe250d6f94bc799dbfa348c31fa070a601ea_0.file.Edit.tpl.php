@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 3.1.31, created on 2018-06-24 00:24:17
-  from "/src/KeizibanTmp/Edit.tpl" */
+  from "/src/KeizibanTmp/My_Contribution.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     '7b3fbe250d6f94bc799dbfa348c31fa070a601ea' => 
     array (
-      0 => '/src/KeizibanTmp/Edit.tpl',
+      0 => '/src/KeizibanTmp/My_Contribution.tpl',
       1 => 1529767469,
       2 => 'file',
     ),
@@ -27,15 +27,15 @@ function content_5b2e6621258716_63532309 (Smarty_Internal_Template $_smarty_tpl)
     <title>投稿文の編集 <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 さん</title>
 </head>
-<form method = "POST" action = "EditContents.php">
+<form method = "POST" action = "My_Contribution.php">
     <input type = 'submit' name = 'Logoutbutton' value = 'ログアウト'>
 </form>
-<form method = "POST" action = "EditContents.php">
+<form method = "POST" action = "My_Contribution.php">
     <input type = 'submit' name = 'backtomypagebutton' value = 'マイページに戻る'>
 </form>
 <body>
 
-<form method = "POST" action ="EditContents.php">
+<form method = "POST" action ="My_Contribution.php">
 <?php if ($_smarty_tpl->tpl_vars['my_contribution']->value != null) {?>
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['my_contribution']->value, 'data');
@@ -65,7 +65,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 
 <?php }?>
 </form>
-<form method = "POST" action = "EditContents.php">
+<form method = "POST" action = "My_Contribution.php">
     <p>編集後、完了ボタンを押してください。</p>
     <textarea name = 'contribution' cols = '75' rows = '10' maxlength = "500" wrap = "hard"><?php echo $_smarty_tpl->tpl_vars['before_edit']->value;?>
 </textarea><br />

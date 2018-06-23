@@ -41,9 +41,14 @@
     if(isset($_POST['request_button'])){  //友達申請ボタンが押されたときの処理
         $requested_user_account_id = $_POST['requested_user_id'];
         insert_friends_request($LoginUserId, $requested_user_account_id, 1);
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'request_completion.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Request_Completion.php');
+    }
+
+    if(isset($_POST['Logoutbutton'])){  //ログアウトボタンが押されたときの処理
+        session_destroy();      //保持していたユーザidを破棄
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
     $smarty -> assign('cnt', $cnt);
     Delete_depulication('request_info', 'user_request, user_requested');
-    $smarty -> display("friends_search.tpl");
+    $smarty -> display("Friends_Search.tpl");

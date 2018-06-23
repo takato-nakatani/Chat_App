@@ -20,7 +20,7 @@
     $user_name = $LoginUserData['account_id'];
 
     $smarty -> assign("name" ,$user_name);
-    $smarty -> display("Keiziban3.tpl");
+    $smarty -> display("My_Page.tpl");
 
     if(isset($_POST['Logoutbutton'])){
         session_destroy();

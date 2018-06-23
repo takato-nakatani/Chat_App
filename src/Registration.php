@@ -4,34 +4,12 @@
     require_once 'DbManager3.php';
     require_once 'Encode.php';
     require_once 'UserDB.php';
+    require(dirname(__FILE__).'/libs/Smarty.class.php');
 
-?>
+    $smarty = new Smarty();
+    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>登録画面</title>
-</head>
-<body>
-<form method = "POST" action = "Registration.php">
-
-    <p>以下のフォームに従って＜ユーザ名＞と＜パスワード＞を設定してください</p>
-    <label>ユーザ名：</label>
-    <input id = 'username' type = 'text' name = 'username' size = '30' maxlength="20"><br />
-
-    <label>ユーザID(半角英数字２字以上２０字以内)：</label>
-    <input id = 'userid' type = 'text' name = 'userid' size = '30' maxlength="20"><br /
-
-    <label>パスワード(半角英数字８字以上３０字以内)：</label>
-    <input id = 'userpass' type = 'text' name = 'userpass' size = '30' maxlength="30"><br />
-    <input type = 'submit' name = 'Registrationbutton' value = '登録'>
-
-</form>
-<form method = "POST" action = "Login.php">
-    <input type = "submit" name = "backtoLogin" value = "ログイン画面に戻る">
-</form>
-<?php
     if(isset($_POST['Registrationbutton'])){
         if(isset($_POST['userid']) && isset($_POST['userpass'])){
             if(!(empty($_POST['userid']) || empty($_POST['userpass']))){
@@ -52,7 +30,7 @@
 
                         $db = GetDB();
                         Insert_User($user_name, $user_id, $user_pass);
-                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'RegistrationCompletion.php');
+                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Registration_Completion.php');
                     }
 
                 }
@@ -68,7 +46,4 @@
         }
     }
 
-?>
-
-</body>
-</html>
+    $smarty -> display("Registration.tpl");

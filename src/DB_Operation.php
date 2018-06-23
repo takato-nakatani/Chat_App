@@ -15,12 +15,11 @@ class DB_Operation
         $db = GetDb();
     }
 
-
-
     function select($cols, $table, $where)
     {
         $statement = 'SELECT ' . $cols . ' FROM ' . $table . ' WHERE ' . $where;
-        $sel = $this -> $db ->prepare($statement);
+        $sel = $this -> $db;
+
         $sel->execute();
 
         $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);

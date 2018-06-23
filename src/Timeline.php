@@ -26,10 +26,6 @@
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
-    if(isset($_POST['homebutton'])){   //ホームボタンが押されたときの処理
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Keiziban3.php');
-    }
-
     $friends_contribution = Select_contribution($user_id);
 
     $cnt = 1;  //ボタンの個別番号
@@ -51,7 +47,7 @@
             if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
                 $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
                 Delete_Contribution($contents_id);   //投稿文を削除する関数
-                header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
+                header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Timeline.php');
             }
         }
     }
@@ -65,7 +61,7 @@
                 }else{
                     $PostContribution = e($_POST['contribution']);
                     insert_contribution($PostContribution, $user_id);
-                    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'MyContribution.php');
+                    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Timeline.php');
                 }
             }else{
                 echo("投稿文を入力してください。");
@@ -77,4 +73,4 @@
 
 
 
-    $smarty -> display("MyPage.tpl");
+    $smarty -> display("Timeline.tpl");

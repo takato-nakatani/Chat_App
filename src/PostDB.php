@@ -76,7 +76,7 @@ function Select_contribution($user_id){  //自分以外の投稿文を取得
 
     function editbutton($contents_id){  //マイページで編集ボタンが押された際に実行される
         $_SESSION['contents'] = $contents_id;
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'EditContents.php');
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Contribution.php');
     }
 
     function Select_contents($where_cols, $where_value){  //投稿文の情報から投稿文を取得

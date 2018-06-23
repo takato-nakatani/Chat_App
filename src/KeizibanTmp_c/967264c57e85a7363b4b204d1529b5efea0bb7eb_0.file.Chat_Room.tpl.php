@@ -27,16 +27,16 @@ function content_5b2e18fbba5cf3_13791617 (Smarty_Internal_Template $_smarty_tpl)
     <title>チャット <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 </title>
 </head>
-<form method = "POST" action = "MyContribution.php">
+<form method = "POST" action = "Timeline.php">
     <input type = 'submit' name = 'Logoutbutton' value = "ログアウト">
 </form>
-<form method = "POST" action = "Keiziban3.php">
+<form method = "POST" action = "My_Page.php">
     <input type = 'submit' name = 'homebutton' value = 'マイページ'>
 </form>
-<form method = "POST" action = "MyContribution.php">
+<form method = "POST" action = "Timeline.php">
     <input type = 'submit' name = 'MyConbutton' value = 'タイムライン'>
 </form>
-<form method = "POST" action = "friends_search.php">
+<form method = "POST" action = "Friends_Search.php">
     <input type = 'submit' name = 'Friends_search_button' value = '友達を検索する'>
 </form>
 <form method = "POST" action = "Request_Management.php">

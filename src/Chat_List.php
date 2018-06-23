@@ -32,4 +32,9 @@
         }
     }
 
+    if(isset($_POST['Logoutbutton'])){  //ログアウトボタンが押されたときの処理
+        session_destroy();      //保持していたユーザidを破棄
+        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
+    }
+
     $smarty -> display("Chat_List.tpl");

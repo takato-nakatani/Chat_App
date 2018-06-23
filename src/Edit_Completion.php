@@ -1,5 +1,5 @@
+<!--　投稿文の編集完了画面　-->
 <?php
-//    <!--　友達申請の完了画面　-->
     session_start();
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
@@ -11,4 +11,4 @@
         $_SESSION['contents'] = NULL;
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Timeline.php');
     }
-    $smarty -> display("Request_Completion.tpl");
+    $smarty -> display("Edit_Completion.tpl");

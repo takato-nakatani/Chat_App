@@ -5,32 +5,11 @@
     require_once 'DbManager3.php';
     require_once 'Encode.php';
     require_once 'UserDB.php';
-?>
+    require(dirname(__FILE__).'/libs/Smarty.class.php');
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Login画面</title>
-</head>
-<body>
-<form method = "POST" action = "Login.php">
-    <p>掲示板</p>
-    <label>ユーザ名(半角英数字２字以上２０字以内)：</label>
-    <input id = 'nametextbox' type = 'text' name = 'Loginname' size = '20' maxlength="20"><br />
-
-    <label>パスワード(半角英数字８字以上３０字以内)：</label>
-    <input id = 'passwordtextbox' type = 'text' name = 'Loginpass' size = '30' maxlength="30"><br />
-
-    <input type = 'submit' name = 'Loginbutton' value = 'ログイン'>
-</form>
-<form method = "POST" action = "Registration.php">
-    <p>まだ新規登録されていない方は以下の＜新規登録＞ボタンより新規登録を行ってください。</p>
-    <input type = 'submit' name = 'NewRegistration' value = '新規登録'>
-</form>
-<?php
-
-
+    $smarty = new Smarty();
+    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
 
     if(isset($_POST['Loginbutton'])){
 
@@ -48,13 +27,11 @@
                     $decision = Login_Certification($LoginName, $LoginPass);  //ログインの認証
 
                     if ($decision) {
-                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Keiziban3.php');
+                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Page.php');
                     } else {
                         echo('ユーザ名またはパスワードが間違っています。');
                     }
                 }
-
-
             }else if(empty($_POST['Loginname']) && empty($_POST['Loginpass'])){
                 echo('ユーザ名とパスワードを入力してください。');
             }else if(empty($_POST['Loginname'])){
@@ -64,8 +41,4 @@
             }
         }
     }
-
-?>
-
-</body>
-</html>
+    $smarty -> display("Login.tpl");
