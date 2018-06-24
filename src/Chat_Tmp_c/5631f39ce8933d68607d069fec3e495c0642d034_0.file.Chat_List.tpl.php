@@ -30,7 +30,7 @@ function content_5b2e8ce9997723_52000515 (Smarty_Internal_Template $_smarty_tpl)
 <form method = "POST" action = "Chat_List.php">
     <input type = 'submit' name = 'Logoutbutton' value = "ログアウト">
 </form>
-<form method = "POST" action = "My_Page.php">
+<form method = "POST" action = "Timeline.php">
     <input type = 'submit' name = 'homebutton' value = 'マイページ'>
 </form>
 <form method = "POST" action = "Timeline.php">

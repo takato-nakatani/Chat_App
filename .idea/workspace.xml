@@ -2,50 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d566129-464d-48ce-a008-591f5cb5d04d" name="デフォルト" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chat_Tmp/header.tpl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DB_Connection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DB_Operation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DbManager3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FriendsDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Edit_Completion.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Login.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/My_Contribution.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/My_Page.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Registration.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Request_Completion.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Timeline.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/7b3fbe250d6f94bc799dbfa348c31fa070a601ea_0.file.Edit.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/879aec91908d9614082b1ee9d16442cbfb82fcd2_0.file.Registration.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/967264c57e85a7363b4b204d1529b5efea0bb7eb_0.file.Chat_Room.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/a97a5d89581e4a0aa9612b87b5d26c3b6c8c4d99_0.file.Login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/c41e26510aea95fc9c5e0a364b261c6cfd922159_0.file.My_Page.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/fa9e43b8f1ab3cccd4c6988aa6a96a0af923bb02_0.file.Timeline.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PostDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/RequestsDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UserDB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Edit_Completion.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Chat_Tmp/My_Page.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Edit_Completion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/My_Page.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_List.php" afterPath="$PROJECT_DIR$/src/Chat_List.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Room.php" afterPath="$PROJECT_DIR$/src/Chat_Room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Edit_Completion.php" afterPath="$PROJECT_DIR$/src/Edit_Completion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Login.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Login.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp/header.tpl" afterPath="$PROJECT_DIR$/src/Chat_Tmp/header.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/0f2d0cf796dd90a020d54dc433a41ab6ec9bbc03_0.file.My_Page.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/0f2d0cf796dd90a020d54dc433a41ab6ec9bbc03_0.file.My_Page.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/39530eb763212ac02bb822b780e5746db3978ca8_0.file.Timeline.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/39530eb763212ac02bb822b780e5746db3978ca8_0.file.Timeline.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/55e15c506c5baf231bd0506dcf8cab5570e51c78_0.file.Friends_Search.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/55e15c506c5baf231bd0506dcf8cab5570e51c78_0.file.Friends_Search.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/5914263623ffe4755a03dad088a35dd99fdae261_0.file.My_Contribution.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/5914263623ffe4755a03dad088a35dd99fdae261_0.file.My_Contribution.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/614931fe9c40d6349d5a31d412baebbb2545c6a2_0.file.header.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/614931fe9c40d6349d5a31d412baebbb2545c6a2_0.file.header.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/64db5d7bb123cf09cc8369393c05c1d469d5f882_0.file.Request_Management.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/64db5d7bb123cf09cc8369393c05c1d469d5f882_0.file.Request_Management.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/6ba5cd0e47f9527ece99a6b98d4841e456a1e3fc_0.file.Chat_List.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/6ba5cd0e47f9527ece99a6b98d4841e456a1e3fc_0.file.Chat_List.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/967264c57e85a7363b4b204d1529b5efea0bb7eb_0.file.Chat_Room.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/967264c57e85a7363b4b204d1529b5efea0bb7eb_0.file.Chat_Room.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/9cfd0c5adaeaae4557f647ca987a7e987bb966f7_0.file.Login.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/9cfd0c5adaeaae4557f647ca987a7e987bb966f7_0.file.Login.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/c41e26510aea95fc9c5e0a364b261c6cfd922159_0.file.My_Page.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/c41e26510aea95fc9c5e0a364b261c6cfd922159_0.file.My_Page.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Tmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" afterPath="$PROJECT_DIR$/src/Chat_Tmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DB_Operation/UserDB.php" afterPath="$PROJECT_DIR$/src/DB_Operation/UserDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Friends_search.php" afterPath="$PROJECT_DIR$/src/Friends_search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Login.php" afterPath="$PROJECT_DIR$/src/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My_Contribution.php" afterPath="$PROJECT_DIR$/src/My_Contribution.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/My_Page.php" afterPath="$PROJECT_DIR$/src/My_Page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Registration.php" afterPath="$PROJECT_DIR$/src/Registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Registration_Completion.php" afterPath="$PROJECT_DIR$/src/Registration_Completion.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Request_Management.php" afterPath="$PROJECT_DIR$/src/Request_Management.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Timeline.php" afterPath="$PROJECT_DIR$/src/Timeline.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/request_completion.php" afterPath="$PROJECT_DIR$/src/request_completion.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,12 +53,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="My_Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/My_Page.php">
+      <file leaf-file-name="Timeline.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Timeline.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="90" />
+            <state relative-caret-position="504">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DB_Operation/UserDB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="29" />
+              <folding>
+                <marker date="1529858772519" expanded="true" signature="220:288" ph="INSERT INTO account_info... " />
+                <marker date="1529858772519" expanded="true" signature="728:792" ph="SELECT * FRO... account_info" />
+                <marker date="1529858772519" expanded="true" signature="1551:1615" ph="SELECT * FRO... account_info" />
+                <marker date="1529858772519" expanded="true" signature="2313:2352" ph="SELECT * FRO... account_info" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Registration.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request_Management.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat_Room.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,9 +116,11 @@
       <file leaf-file-name="Friends_Search.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,28 +128,30 @@
       <file leaf-file-name="Chat_List.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+            <state relative-caret-position="273">
+              <caret line="13" column="88" lean-forward="false" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/header.tpl">
+      <file leaf-file-name="Timeline.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/php-getting-started/web/views/src/Login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="My_Page.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/My_Page.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -110,10 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FriendsManager</find>
-      <find>UserManager</find>
-      <find>PostManager</find>
-      <find>RequestsManager</find>
       <find>insert_flg</find>
       <find>Update_flg</find>
       <find>searc</find>
@@ -122,7 +169,6 @@
       <find>Display_Contribution</find>
       <find>Select_contents</find>
       <find>Select</find>
-      <find>var_dump</find>
       <find>MyContribution.php</find>
       <find>MyPage.tpl</find>
       <find>EditContents.php</find>
@@ -140,6 +186,11 @@
       <find>KeizibanTmp</find>
       <find>DbManager3</find>
       <find>$_POST['Logoutbutton']</find>
+      <find>var_dump</find>
+      <find>My_page</find>
+      <find>Edit_Com</find>
+      <find>'</find>
+      <find>Select_LogedIn_User_Data</find>
     </findStrings>
     <replaceStrings>
       <replace>account_info</replace>
@@ -166,6 +217,9 @@
       <replace>Edit_Completion.php</replace>
       <replace>Chat_Tmp</replace>
       <replace>DB_Manager</replace>
+      <replace>Timeline</replace>
+      <replace>&quot;</replace>
+      <replace>Select_User_Data</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -174,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MyContribution.php" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl" />
         <option value="$PROJECT_DIR$/src/EditContents.php" />
@@ -204,27 +257,28 @@
         <option value="$PROJECT_DIR$/src/PostDB.php" />
         <option value="$PROJECT_DIR$/src/FriendsDB.php" />
         <option value="$PROJECT_DIR$/src/RequestsDB.php" />
-        <option value="$PROJECT_DIR$/src/Login.php" />
-        <option value="$PROJECT_DIR$/src/My_Page.php" />
-        <option value="$PROJECT_DIR$/src/Registration.php" />
         <option value="$PROJECT_DIR$/src/Request_Management.php" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Edit_Completion.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Login.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl" />
-        <option value="$PROJECT_DIR$/src/Chat_List.php" />
         <option value="$PROJECT_DIR$/src/Chat_Room.php" />
         <option value="$PROJECT_DIR$/src/Friends_Search.php" />
-        <option value="$PROJECT_DIR$/src/My_Contribution.php" />
-        <option value="$PROJECT_DIR$/src/Timeline.php" />
         <option value="$PROJECT_DIR$/src/Chat_Tmp/My_Page.tpl" />
+        <option value="$PROJECT_DIR$/src/My_Page.php" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Edit_Completion.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl" />
+        <option value="$PROJECT_DIR$/src/My_Contribution.php" />
+        <option value="$PROJECT_DIR$/src/Registration_Completion.php" />
+        <option value="$PROJECT_DIR$/src/Registration.php" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl" />
+        <option value="$PROJECT_DIR$/src/Login.php" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Login.tpl" />
         <option value="$PROJECT_DIR$/src/Chat_Tmp/header.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl" />
+        <option value="$PROJECT_DIR$/src/Chat_List.php" />
+        <option value="$PROJECT_DIR$/src/Timeline.php" />
+        <option value="$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl" />
       </list>
     </option>
   </component>
@@ -273,6 +327,12 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Chat_Tmp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Chat_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chat_App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DB_Operation" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -313,12 +373,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529399895837</updated>
       <workItem from="1529399897116" duration="702000" />
-      <workItem from="1529413040914" duration="132766000" />
+      <workItem from="1529413040914" duration="145549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133468000" />
+    <option name="totallyTimeSpent" value="146251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -382,38 +442,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp_c/7b3fbe250d6f94bc799dbfa348c31fa070a601ea_0.file.Edit.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EditCompletion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -590,86 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Edit_Completion.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_List.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat_Room.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -678,50 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Edit_Completion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Encode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friends_Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/My_Contribution.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Registration_Completion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -742,47 +650,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Timeline.php">
+    <entry file="file://$PROJECT_DIR$/src/Friends_Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/My_Page.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="291">
+          <caret line="30" column="123" lean-forward="false" selection-start-line="30" selection-start-column="123" selection-end-line="30" selection-end-column="123" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/My_Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="90" />
+        <state relative-caret-position="84">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/My_Page.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Edit_Completion.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edit_Completion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16842">
+          <caret line="5" column="1438" lean-forward="false" selection-start-line="5" selection-start-column="1438" selection-end-line="5" selection-end-column="1438" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/My_Contribution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Registration_Completion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="22" column="83" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Request_Completion.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_List.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="88" lean-forward="false" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Registration.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Chat_Room.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Request_Management.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Friends_Search.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/My_Contribution.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_List.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB_Operation/PostDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <marker date="1529832759389" expanded="true" signature="233:299" ph="INSERT INTO timeline_info... " />
+            <marker date="1529832759389" expanded="true" signature="770:820" ph="UPDATE timel... " />
+            <marker date="1529832759389" expanded="true" signature="1157:1195" ph="DELETE FROM " />
+            <marker date="1529832759389" expanded="true" signature="1486:1645" ph="SELECT timel... timeline_info" />
+            <marker date="1529832759389" expanded="true" signature="2059:2112" ph="SELECT * FRO... timeline_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB_Operation/UserDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="29" />
+          <folding>
+            <marker date="1529858772519" expanded="true" signature="220:288" ph="INSERT INTO account_info... " />
+            <marker date="1529858772519" expanded="true" signature="728:792" ph="SELECT * FRO... account_info" />
+            <marker date="1529858772519" expanded="true" signature="1551:1615" ph="SELECT * FRO... account_info" />
+            <marker date="1529858772519" expanded="true" signature="2313:2352" ph="SELECT * FRO... account_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Timeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat_Tmp/Timeline.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/php-getting-started/web/views/src/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

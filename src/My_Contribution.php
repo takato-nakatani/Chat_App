@@ -12,7 +12,7 @@
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
     $LoginUserData = array();
-    $LoginUserData = Select_LogedIn_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
+    $LoginUserData = Select_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
     $user_id = $LoginUserData['id'];
     $user_name = $LoginUserData['account_id'];
     $cnt = 1;  //ボタンの個別番号
@@ -29,6 +29,14 @@
             $before_edit = $_POST["contents{$i}"];
             $smarty -> assign('before_edit', $before_edit);
             $_SESSION['contents_id'] = $_POST["contents_id{$i}"];
+        }
+    }
+
+    for ($i = 1; $i < count($my_contribution) + 1; $i++){
+        if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
+            $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
+            Delete_Contribution($contents_id);   //投稿文を削除する関数
+            header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Contribution.php');
         }
     }
 

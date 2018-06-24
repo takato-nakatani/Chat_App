@@ -63,7 +63,7 @@
     }
 
 
-    function Select_LogedIn_User_Data($user_id){       //ユーザidからユーザの情報を取得
+    function Select_User_Data($user_id){       //ユーザidからユーザの情報を取得
             $db = GetDb();
             $statement = 'SELECT * FROM account_info WHERE id = ?';
             $sel = $db -> prepare($statement);

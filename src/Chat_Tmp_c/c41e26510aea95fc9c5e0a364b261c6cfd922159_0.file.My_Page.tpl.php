@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 3.1.31, created on 2018-06-24 03:09:36
-  from "/src/Chat_Tmp/My_Page.tpl" */
+  from "/src/Chat_Tmp/Timeline.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'c41e26510aea95fc9c5e0a364b261c6cfd922159' => 
     array (
-      0 => '/src/Chat_Tmp/My_Page.tpl',
+      0 => '/src/Chat_Tmp/Timeline.tpl',
       1 => 1529773802,
       2 => 'file',
     ),
@@ -27,7 +27,7 @@ function content_5b2e8ce04b8e96_66528145 (Smarty_Internal_Template $_smarty_tpl)
     <title><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 さんのマイページ</title>
 </head>
-<form method = "POST" action = "My_Page.php">
+<form method = "POST" action = "Timeline.php">
     <p><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 　さん</p>
     <input type = 'submit' name = 'Logoutbutton' value = 'ログアウト'>

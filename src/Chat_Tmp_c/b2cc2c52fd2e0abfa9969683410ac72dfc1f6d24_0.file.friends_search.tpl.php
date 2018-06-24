@@ -31,7 +31,7 @@ function content_5b2e0b12e1f684_51572523 (Smarty_Internal_Template $_smarty_tpl)
     <p>友達を検索</p>
     <input type = 'submit' name = 'Logoutbutton' value = "ログアウト">
 </form>
-<form method = "POST" action = "My_Page.php">
+<form method = "POST" action = "Timeline.php">
     <input type = 'submit' name = 'homebutton' value = 'マイページ'>
 </form>
 <form method = "POST" action = "Timeline.php">

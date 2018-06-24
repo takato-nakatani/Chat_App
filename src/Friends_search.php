@@ -11,7 +11,7 @@
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
     $LoginUserData = array();
-    $LoginUserData = Select_LogedIn_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
+    $LoginUserData = Select_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
     $user_id = $LoginUserData['id'];
     $user_name = $LoginUserData['account_id'];
     $smarty -> assign("name" ,$user_name);
@@ -29,7 +29,6 @@
                     foreach ($searched_user_data as $requested_data){
                         $request_info = select_request_info($user_id, $requested_data['id']);    //自分が検索対象のユーザにリクエストを送っていれば、そのリクエストデータを取得
                         if($request_info['friends_request_flg'] != 1){                        //自分が検索対象のユーザにリクエストを送っているかどうか
-                            var_dump($searched_user_data);
                             $smarty -> assign("searched_user_data", $searched_user_data[0]);
                             $smarty -> assign("request_info", $requested_info);
                             $smarty -> assign("requested_info", $request_info);

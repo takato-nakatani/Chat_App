@@ -20,24 +20,30 @@
                 $LoginName = $_POST['Loginname'];
                 $LoginPass = $_POST['Loginpass'];
                 if(!preg_match('/^[0-9a-zA-Z]{2,20}$/', $LoginName)) {
-                    print("ユーザ名は半角英数字２字以上２０字以下で入力してください。");
+                    $error_msg_preg_match = "ユーザ名は半角英数字２字以上２０字以下で入力してください。";
+                    $smarty -> assign('error_msg_preg_match', $error_msg_preg_match);
                 }else if(!preg_match('/^[0-9a-zA-Z]{8,30}$/', $LoginPass)){
-                    print("パスワードは半角英数字８字以上３０字以下で入力してください。");
+                    $error_msg_preg_match = "パスワードは半角英数字８字以上３０字以下で入力してください。";
+                    $smarty -> assign('error_msg_preg_match', $error_msg_preg_match);
                 }else {
                     $decision = Login_Certification($LoginName, $LoginPass);  //ログインの認証
 
                     if ($decision) {
-                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Page.php');
+                        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Timeline.php');
                     } else {
-                        echo('ユーザ名またはパスワードが間違っています。');
+                        $input_error_msg = 'ユーザ名またはパスワードが間違っています。';
+                        $smarty -> assign('input_error_msg', $input_error_msg);
                     }
                 }
             }else if(empty($_POST['Loginname']) && empty($_POST['Loginpass'])){
-                echo('ユーザ名とパスワードを入力してください。');
+                $error_msg = 'ユーザ名とパスワードを入力してください。';
+                $smarty -> assign('error_msg', $error_msg);
             }else if(empty($_POST['Loginname'])){
-                echo('ユーザ名を入力してください。');
+                $error_msg = 'ユーザ名を入力してください。';
+                $smarty -> assign('error_msg', $error_msg);
             }else{
-                echo('パスワードを入力してください。');
+                $error_msg = 'パスワードを入力してください。';
+                $smarty -> assign('error_msg', $error_msg);
             }
         }
     }

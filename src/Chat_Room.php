@@ -13,7 +13,7 @@
     //ここから下メソッド化できそう
     $LoginUserId = $_SESSION['id'];         //ユーザのid
     $LoginUserData = array();
-    $LoginUserData = Select_LogedIn_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
+    $LoginUserData = Select_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
     $user_id = $LoginUserData['id'];
     $user_name = $LoginUserData['account_id'];
     $smarty -> assign("name" ,$user_name);
@@ -25,7 +25,7 @@
     $chat_id = $_SESSION['chat_id'];
     //チャット相手のデータ取得
     $friend_info = select_friends_info("*","id = {$chat_id}");
-    $friend_account_data = Select_LogedIn_User_Data($friend_info["friends_user_id"]);
+    $friend_account_data = Select_User_Data($friend_info["friends_user_id"]);
     $smarty -> assign('friend_account_data', $friend_account_data);
 
 

@@ -12,7 +12,7 @@
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
     $LoginUserData = array();
-    $LoginUserData = Select_LogedIn_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
+    $LoginUserData = Select_User_Data($LoginUserId);        //ユーザidからログインしているユーザの名前を取得
     $user_id = $LoginUserData['id'];
     $user_name = $LoginUserData['account_id'];
     $smarty -> assign("name" ,$user_name);
