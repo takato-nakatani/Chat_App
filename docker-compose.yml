@@ -23,11 +23,12 @@ services:
       - ./src:/src
   
   db:
-    image: mysql:8.0.11
+    build: ./db
     env_file: .env
     ports:
       - "3306:3306"
     volumes:
+      - ./sql:/docker-entrypoint-initdb.d
       - db-data:/var/lib/mysql
       
 volumes:

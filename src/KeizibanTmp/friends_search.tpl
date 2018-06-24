@@ -24,18 +24,16 @@
     <input type = 'submit' name = 'search_button' value = '検索'>
 </form>
 <body>
-    {if $searched_user_data != NULL}
-        {foreach from = $searched_user_data item = $data}
+    {if $searched_user_data != null}
             {if $request_info[0]['friends_request_flg'] != 1 AND $requested_info[0]['friends_request_flg'] != 1}
-                    {$data['name']}
+                    {$searched_user_data['name']}
                     <form method = "POST" action = "Friends_Search.php">
                       <input type = "submit" name = "request_button" value = "友達リクエスト">
-                      <input type = "hidden" name = "requested_user_id" value = {$data['id']}>
+                      <input type = "hidden" name = "requested_user_id" value = {$searched_user_data['id']}>
                     </form>
             {/if}
-        {/foreach}
     {/if}
-    {if ($searched_user_data == NULL || $data['friends_request_flg'] == 1) && $cnt == 1}
+    {if ($searched_user_data == null || $data['friends_request_flg'] == 1) && $cnt == 1}
         一致するユーザは存在しません。ユーザIDが違うか、すでにリクエストを出している、または友達の可能性があります。
     {/if}
 </body>

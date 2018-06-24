@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-06-24 00:28:17
+/* Smarty version 3.1.31, created on 2018-06-24 11:44:53
   from "/src/KeizibanTmp/Request_Management.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5b2e67112bab60_76382483',
+  'unifunc' => 'content_5b2f05a55d3b36_01875130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64685d8c16d022c43f0fe52059d91edbec9e9fa3' => 
     array (
       0 => '/src/KeizibanTmp/Request_Management.tpl',
-      1 => 1529747617,
+      1 => 1529773802,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b2e67112bab60_76382483 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b2f05a55d3b36_01875130 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 <head>
-    <title>チャット <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+    <title>友達管理ページ <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 </title>
 </head>
-<form method = "POST" action = "Timeline.php">
+<form method = "POST" action = "Request_Management.php">
     <p>友達を検索</p>
     <input type = 'submit' name = 'Logoutbutton' value = "ログアウト">
 </form>

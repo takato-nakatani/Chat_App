@@ -2,48 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d566129-464d-48ce-a008-591f5cb5d04d" name="デフォルト" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Edit_Completion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Edit_Completion.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Login.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Registration.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Request_Completion.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/879aec91908d9614082b1ee9d16442cbfb82fcd2_0.file.Registration.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/a97a5d89581e4a0aa9612b87b5d26c3b6c8c4d99_0.file.Login.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/c41e26510aea95fc9c5e0a364b261c6cfd922159_0.file.My_Page.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/fa9e43b8f1ab3cccd4c6988aa6a96a0af923bb02_0.file.Timeline.tpl.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EditCompletion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/EditContents.php" afterPath="$PROJECT_DIR$/src/My_Contribution.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Keiziban3.php" afterPath="$PROJECT_DIR$/src/My_Page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Edit.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/My_Contribution.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Keiziban3.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/My_Page.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/KeizibanTmp/MyPage.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Timeline.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MyContribution.php" afterPath="$PROJECT_DIR$/src/Timeline.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/RegistrationCompletion.php" afterPath="$PROJECT_DIR$/src/Registration_Completion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_List.php" afterPath="$PROJECT_DIR$/src/Chat_List.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chat_Room.php" afterPath="$PROJECT_DIR$/src/Chat_Room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DB_Connection.php" afterPath="$PROJECT_DIR$/src/DB_Connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DB_Operation.php" afterPath="$PROJECT_DIR$/src/DB_Operation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DbManager3.php" afterPath="$PROJECT_DIR$/src/DbManager3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Friends_search.php" afterPath="$PROJECT_DIR$/src/Friends_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Chat_List.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" afterPath="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/5631f39ce8933d68607d069fec3e495c0642d034_0.file.Chat_List.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Friends_Search.php" afterPath="$PROJECT_DIR$/src/Friends_Search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/64685d8c16d022c43f0fe52059d91edbec9e9fa3_0.file.Request_Management.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/7b3fbe250d6f94bc799dbfa348c31fa070a601ea_0.file.Edit.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/7b3fbe250d6f94bc799dbfa348c31fa070a601ea_0.file.Edit.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/7fbdd1f38c8e9e791510b1cb5b221f75fc518cce_0.file.Keiziban3.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/967264c57e85a7363b4b204d1529b5efea0bb7eb_0.file.Chat_Room.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/967264c57e85a7363b4b204d1529b5efea0bb7eb_0.file.Chat_Room.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/acebce52c2633ad50e011f6583bd21a7e3f35eab_0.file.MyPage.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/b2cc2c52fd2e0abfa9969683410ac72dfc1f6d24_0.file.friends_search.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Login.php" afterPath="$PROJECT_DIR$/src/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PostDB.php" afterPath="$PROJECT_DIR$/src/PostDB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Registration.php" afterPath="$PROJECT_DIR$/src/Registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/request_completion.php" afterPath="$PROJECT_DIR$/src/request_completion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/default.conf" afterPath="$PROJECT_DIR$/web/default.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/879aec91908d9614082b1ee9d16442cbfb82fcd2_0.file.Registration.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/879aec91908d9614082b1ee9d16442cbfb82fcd2_0.file.Registration.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KeizibanTmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" afterPath="$PROJECT_DIR$/src/KeizibanTmp_c/e490d8d0e8618e6e9983f95961f786cf91592884_0.file.Friends_Search.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RequestsDB.php" afterPath="$PROJECT_DIR$/src/RequestsDB.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,32 +18,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DbManager3.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DbManager3.php">
+      <file leaf-file-name="Friends_Search.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Friends_Search.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="452">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB_Connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB_Connection.php">
+      <file leaf-file-name="Friends_Search.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Friends_Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="567">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB_Operation.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DB_Operation.php">
+      <file leaf-file-name="RequestsDB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="714">
+              <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+              <folding>
+                <marker date="1529812335936" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
+                <marker date="1529812335936" expanded="true" signature="754:777" ph="UPDATE reque... " />
+                <marker date="1529812335936" expanded="true" signature="754:841" ph="UPDATE reque... " />
+                <marker date="1529812335936" expanded="true" signature="1740:1810" ph="DELETE FROM " />
+                <marker date="1529812335936" expanded="true" signature="2261:2372" ph="DELETE FROM " />
+                <marker date="1529812335936" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
+                <marker date="1529812335936" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
+                <marker date="1529812335936" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
+                <marker date="1529812335936" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
+                <marker date="1529812335936" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
+                <marker date="1529812335936" expanded="true" signature="5355:5563" ph="SELECT accou... account_info" />
+                <marker date="1529812335936" expanded="true" signature="6118:6189" ph="SELECT * FRO... request_info" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/FriendsManager.php" />
         <option value="$PROJECT_DIR$/src/Encode.php" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/friends_search.tpl" />
-        <option value="$PROJECT_DIR$/src/RequestsDB.php" />
         <option value="$PROJECT_DIR$/src/Friends_search.php" />
         <option value="$PROJECT_DIR$/src/Keiziban3.php" />
         <option value="$PROJECT_DIR$/src/MyContribution.php" />
@@ -178,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/Chat_Room.php" />
         <option value="$PROJECT_DIR$/src/Timeline.php" />
         <option value="$PROJECT_DIR$/src/Chat_List.php" />
-        <option value="$PROJECT_DIR$/src/Friends_Search.php" />
         <option value="$PROJECT_DIR$/src/My_Contribution.php" />
         <option value="$PROJECT_DIR$/src/Login.php" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Chat_Room.tpl" />
@@ -188,12 +163,14 @@
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Request_Completion.tpl" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Request_Management.tpl" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Timeline.tpl" />
-        <option value="$PROJECT_DIR$/src/KeizibanTmp/Friends_Search.tpl" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/Login.tpl" />
         <option value="$PROJECT_DIR$/src/KeizibanTmp/My_Page.tpl" />
         <option value="$PROJECT_DIR$/src/DbManager3.php" />
         <option value="$PROJECT_DIR$/src/DB_Connection.php" />
         <option value="$PROJECT_DIR$/src/DB_Operation.php" />
+        <option value="$PROJECT_DIR$/src/KeizibanTmp/Friends_Search.tpl" />
+        <option value="$PROJECT_DIR$/src/RequestsDB.php" />
+        <option value="$PROJECT_DIR$/src/Friends_Search.php" />
       </list>
     </option>
   </component>
@@ -204,9 +181,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="853" />
-    <option name="width" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
@@ -282,15 +259,15 @@
       <option name="presentableId" value="Default" />
       <updated>1529399895837</updated>
       <workItem from="1529399897116" duration="702000" />
-      <workItem from="1529413040914" duration="116189000" />
+      <workItem from="1529413040914" duration="120028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116891000" />
+    <option name="totallyTimeSpent" value="120730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -482,27 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-          <folding>
-            <marker date="1529744436727" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
-            <marker date="1529744436727" expanded="true" signature="754:777" ph="UPDATE reque... " />
-            <marker date="1529744436727" expanded="true" signature="754:841" ph="UPDATE reque... " />
-            <marker date="1529744436727" expanded="true" signature="1740:1810" ph="DELETE FROM " />
-            <marker date="1529744436727" expanded="true" signature="2261:2372" ph="DELETE FROM " />
-            <marker date="1529744436727" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
-            <marker date="1529744436727" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
-            <marker date="1529744436727" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
-            <marker date="1529744436727" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
-            <marker date="1529744436727" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
-            <marker date="1529744436727" expanded="true" signature="5397:5605" ph="SELECT accou... account_info" />
-            <marker date="1529744436727" expanded="true" signature="6160:6231" ph="SELECT * FRO... request_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EditContents.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -524,7 +480,7 @@
         <state relative-caret-position="273">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="37" />
           <folding>
-            <element signature="e#6#104#0#PHP" expanded="true" />
+            <element signature="e#6#104#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -542,7 +498,7 @@
         <state relative-caret-position="378">
           <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
-            <element signature="e#6#103#0#PHP" expanded="true" />
+            <element signature="e#6#103#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,14 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friends_Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -707,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Friends_Search.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Login.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -757,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DbManager3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB_Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -777,6 +709,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DbManager3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeizibanTmp/Friends_Search.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestsDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+          <folding>
+            <marker date="1529812335936" expanded="true" signature="277:331" ph="INSERT INTO ${$table}... " />
+            <marker date="1529812335936" expanded="true" signature="754:777" ph="UPDATE reque... " />
+            <marker date="1529812335936" expanded="true" signature="754:841" ph="UPDATE reque... " />
+            <marker date="1529812335936" expanded="true" signature="1740:1810" ph="DELETE FROM " />
+            <marker date="1529812335936" expanded="true" signature="2261:2372" ph="DELETE FROM " />
+            <marker date="1529812335936" expanded="true" signature="2301:2370" ph="SELECT * FRO... Min" />
+            <marker date="1529812335936" expanded="true" signature="2317:2357" ph="SELECT Min(i... ${$table}" />
+            <marker date="1529812335936" expanded="true" signature="2741:2832" ph="INSERT INTO request_info... " />
+            <marker date="1529812335936" expanded="true" signature="3548:3620" ph="SELECT * FRO... request_info" />
+            <marker date="1529812335936" expanded="true" signature="4182:4417" ph="SELECT accou... account_info" />
+            <marker date="1529812335936" expanded="true" signature="5355:5563" ph="SELECT accou... account_info" />
+            <marker date="1529812335936" expanded="true" signature="6118:6189" ph="SELECT * FRO... request_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Friends_Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding />
         </state>
       </provider>

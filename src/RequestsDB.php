@@ -111,7 +111,6 @@
                           OR account_info.id = user_requested WHERE account_id = ?';
             $sel = $db->prepare($statement);
             $sel->bindValue(1, $account_id);
-//            $sel->bindValue(2, $my_id);
             $sel->execute();
             $ResultSet = $sel->fetchAll(PDO::FETCH_ASSOC);
             if (!(empty($ResultSet))) {
