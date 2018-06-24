@@ -9,7 +9,7 @@
 <div class="container">
     <h1>ログイン</h1>
     <form method = "POST" action = "Login.php">
-        <label>ユーザ名(半角英数字２字以上２０字以内)：</label>
+        <label>ユーザID(半角英数字２字以上２０字以内)：</label>
         <input id = 'nametextbox' type = 'text' name = 'Loginname' size = '20' maxlength="20"><br />
 
         <label>パスワード(半角英数字８字以上３０字以内)：</label>
