@@ -3,13 +3,13 @@
 
 
     session_start();
-    require_once 'UserDB.php';
-    require_once 'PostDB.php';
+    require_once './DB_Operation/UserDB.php';
+    require_once './DB_Operation/PostDB.php';
     require_once 'Encode.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
@@ -20,19 +20,12 @@
 
     $smarty -> assign("name" ,$user_name);
 
-
-    if(isset($_POST['Logoutbutton'])){  //ログアウトボタンが押されたときの処理
-        session_destroy();      //保持していたユーザidを破棄
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
-    }
-
     $friends_contribution = Select_contribution($user_id);
 
     $cnt = 1;  //ボタンの個別番号
     $smarty -> assign('cnt', $cnt);
     $smarty -> assign('login_user_id', $LoginUserId);
     $smarty -> assign('friends_contribution', $friends_contribution);
-
 
     if($friends_contribution != null){
         for ($i = 1; $i < count($friends_contribution[0]); $i++){    //投稿文の数だけfor文でループ
@@ -42,7 +35,6 @@
             }
         }
 
-
         for ($i = 1; $i < count($friends_contribution[0]); $i++){
             if(isset($_POST["deletebutton{$i}"])){   //どのボタンが押されたか
                 $contents_id = $_POST["contents_id{$i}"];  //押されたボタンと投稿文のidを紐づけたhiddenから投稿文のidを取得
@@ -51,7 +43,6 @@
             }
         }
     }
-
 
     if(isset($_POST['contributionbutton'])){
         if(isset($_POST['contribution'])){

@@ -4,8 +4,8 @@
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
     if(isset($_POST['backtomypage'])){
         $_SESSION['contents'] = NULL;

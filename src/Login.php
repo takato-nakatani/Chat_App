@@ -2,14 +2,14 @@
     //----------　ログイン画面　----------
 
     session_start();
-    require_once 'DbManager3.php';
+    require_once './DB_Operation/DB_Manager.php';
     require_once 'Encode.php';
-    require_once 'UserDB.php';
+    require_once './DB_Operation/UserDB.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
     if(isset($_POST['Loginbutton'])){
 

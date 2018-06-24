@@ -4,14 +4,14 @@
 
 
     session_start();
-    require_once 'UserDB.php';
-    require_once 'PostDB.php';
+    require_once './DB_Operation/UserDB.php';
+    require_once './DB_Operation/PostDB.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
 
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
     $LoginUserId = $_SESSION['id'];
     $LoginUserData = array();

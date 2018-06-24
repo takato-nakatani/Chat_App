@@ -1,13 +1,13 @@
 <?php
     //----------　自分の投稿文のページ　----------
     session_start();
-    require_once 'UserDB.php';
-    require_once 'PostDB.php';
+    require_once './DB_Operation/UserDB.php';
+    require_once './DB_Operation/PostDB.php';
     require_once 'Encode.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
@@ -32,7 +32,6 @@
         }
     }
 
-
     if(isset($_POST['editcompletebutton'])) {
         if(!(empty($_POST['contribution']))){
             $after_edit = $_POST['contribution'];
@@ -46,10 +45,4 @@
             header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'My_Contribution.php');
         }
     }
-
-    if(isset($_POST['Logoutbutton'])){
-        session_destroy();
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
-    }
-
     $smarty -> display("My_Contribution.tpl");

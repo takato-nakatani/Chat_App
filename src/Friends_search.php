@@ -1,12 +1,12 @@
 <?php
     session_start();
-    require_once 'UserDB.php';
-    require_once 'RequestsDB.php';
+    require_once './DB_Operation/UserDB.php';
+    require_once './DB_Operation/RequestsDB.php';
     require(dirname(__FILE__).'/libs/Smarty.class.php');
 
     $smarty = new Smarty();
-    $smarty -> template_dir = dirname(__FILE__).'/KeizibanTmp/';
-    $smarty -> compile_dir = dirname(__FILE__).'/KeizibanTmp_c/';
+    $smarty -> template_dir = dirname(__FILE__).'/Chat_Tmp/';
+    $smarty -> compile_dir = dirname(__FILE__).'/Chat_Tmp_c/';
 
 
     $LoginUserId = $_SESSION['id'];         //ユーザのid
@@ -46,11 +46,6 @@
         $requested_user_account_id = $_POST['requested_user_id'];
         insert_friends_request($LoginUserId, $requested_user_account_id, 1);
         header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Request_Completion.php');
-    }
-
-    if(isset($_POST['Logoutbutton'])){  //ログアウトボタンが押されたときの処理
-        session_destroy();      //保持していたユーザidを破棄
-        header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'Login.php');
     }
 
     $smarty -> assign('cnt', $cnt);
